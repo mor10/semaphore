@@ -16,6 +16,9 @@ Semaphore utilizes modern web technologies to provide a responsive, accessible, 
 
 When a letter is selected, the JavaScript applies a class to the left and right arms that in turn brings in CSS rules that position the arms using CSS `transform: rotate();`. In some cases the arms are simply rotated along the plane of the page (much like a clock face), in others they are also rotated in 3D space to allow the flag to "react" to gravity. To make the figure more lifelike, the `transition` property is used to create an animation. The end result is a graphic figure that appears to be alive. The effect is especially striking when typing on your keyboard.
 
+### NoJS Fallback
+In the original submission, I had left out the JavaScript fallback. This has now been remedied. If the browser does not support JavaScript, an SVG mapping all the sepaphore positions is presented in its place. The graphic also has a long description appended describing the flag positions in plain text for screen readers.
+
 ### Challenges
 When I originally put this project together, I used a much simpler SVG without symbols and applied the transforms to IDs within the SVG. However, early testing showed [CSS transforms are not honored when applied to elements or presentational attributes within an SVG in Internet Explorer 11 and Edge](https://developer.microsoft.com/en-us/microsoft-edge/platform/status/supportcsstransformsonsvg/?q=svg). To get around this problem, I split each of the arms into a `symbol` within the SVG and called them in separately. As individual elements in the DOM, they accept CSS transforms with no issues.
 
