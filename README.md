@@ -1,5 +1,5 @@
 # Semaphore
-### A [10K Apart](https://a-k-apart.com/) entry by [Morten Rand-Hendriksen](https://mor10.com).
+### A [10K Apart entry](https://a-k-apart.com/gallery/Semaphore) by [Morten Rand-Hendriksen](https://mor10.com).
 
 Flag semaphore is, quite literally, a flagging mode of communication. Once the go-to method for line-of-sight communication on ships and land, it is now an archaic emergency measure only employed when all electronic options are obsolete.
 
